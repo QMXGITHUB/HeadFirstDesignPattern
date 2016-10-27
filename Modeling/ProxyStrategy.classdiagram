@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="340c7aac-2b54-494f-81e9-e0f0b9ce6cd8" name="ProxyStrategy" linkedPackageId="796d855a-686b-40a2-9e44-5438a5bab1af" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ad184d55-93d9-47d4-97e9-27062b6688df">
+      <profileInstance Id="06e62c1e-5eb8-4fb8-a26e-309475babc5d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c03f8927-cf7b-416a-bfc6-e2f8cbad9a8a">
+      <profileInstance Id="444a2792-7976-4b99-a981-5fc119693fe9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d7413023-0590-4c53-9f4c-9f5b5be104c4" name="IMachine" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7b33570-d9f8-4355-b9a9-5a084c09fe79" />
+        <ownedOperations>
+          <operation Id="ae447943-2ae1-4139-bb6f-6bcb7a47392b" name="GetLocation" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2ed58ec-f039-4de9-a1ab-fc2d7ef2cd8f" />
+          </operation>
+          <operation Id="d3b1bf7e-9ad7-43aa-a624-50febe840fb1" name="GetStatus" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="81d3d296-f4ba-4d11-ae66-b6338fea925e" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b96ff40a-1f6e-4a9c-b1f3-e52f7fdcc9a2" name="GumballMachine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ea66db29-75f7-4335-b875-16f0a1d02c56" />
+        <suppliersInternal>
+          <interfaceRealization Id="ea99d81a-e583-4dd3-a045-e0ce9a3c2097">
+            <interfaceMoniker Id="d7413023-0590-4c53-9f4c-9f5b5be104c4" LastKnownName="IMachine" />
+            <elementDefinition Id="58675537-e791-43ce-8400-48a6d88a1f47" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="8906a083-804e-4683-b65f-0959af3cc1c6" name="GetLocation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e7529f22-5309-4419-9200-9a3d2c745857" />
+          </operation>
+          <operation Id="21bc8a77-c005-4f9e-bdbe-2448fcb6323c" name="GetStatus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9f15e55f-6dda-48df-a433-8e4ac1e519ee" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="688d2c47-6e93-4e81-9453-66ab643f77cd" name="MachineProxy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="33b2b717-25a9-45da-a867-4d0b15926a30" />
+        <suppliersInternal>
+          <interfaceRealization Id="70a4efa8-76c8-4417-9df2-a18dcf7c521e">
+            <interfaceMoniker Id="d7413023-0590-4c53-9f4c-9f5b5be104c4" LastKnownName="IMachine" />
+            <elementDefinition Id="fffc306c-0ba3-45ac-a2de-a31883b9d98a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="15adcba1-7a97-4a2e-b89c-612732af586b" isDerived="false" sourceEndRoleName="MachineProxy" targetEndRoleName="GumballMachine" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b96ff40a-1f6e-4a9c-b1f3-e52f7fdcc9a2" LastKnownName="GumballMachine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="680a701c-2fc8-4a73-9c4b-b827510f02b4" name="MachineProxy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3fc5985e-2b89-45df-95ca-0d560bcfb734" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4bd405f-756c-4b5b-879e-6be6838b85f2" name="GumballMachine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="135c29f1-0f49-4db8-b489-bb5815fb0c05" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="795bec4c-a3ad-4897-925c-fcf5449d8ea6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3323cc26-d6a8-4fbb-b0b6-d02a6367ae3e" name="GumballMachine" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69070c3c-8ed9-42d1-8ce5-1a184433e64c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="dbd53e5a-cb9b-452b-88e4-3ac1065cff9f" name="GetLocation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af4b750b-091d-48da-ab11-06c8ee3b588c" />
+          </operation>
+          <operation Id="042354d6-d1f1-49b8-b51b-0014774de31a" name="GetStatus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d1f263e-a148-4e54-bbbd-8e2cc666e91e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="796d855a-686b-40a2-9e44-5438a5bab1af" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>

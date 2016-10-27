@@ -167,6 +167,158 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f7b33570-d9f8-4355-b9a9-5a084c09fe79"
+        name="IMachine"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="c2ed58ec-f039-4de9-a1ab-fc2d7ef2cd8f"
+            name="GetLocation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="81d3d296-f4ba-4d11-ae66-b6338fea925e"
+            name="GetStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea66db29-75f7-4335-b875-16f0a1d02c56"
+        name="GumballMachine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="58675537-e791-43ce-8400-48a6d88a1f47">
+            <interfaceMoniker
+              Id="f7b33570-d9f8-4355-b9a9-5a084c09fe79"
+              LastKnownName="IMachine"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e7529f22-5309-4419-9200-9a3d2c745857"
+            name="GetLocation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9f15e55f-6dda-48df-a433-8e4ac1e519ee"
+            name="GetStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33b2b717-25a9-45da-a867-4d0b15926a30"
+        name="MachineProxy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="fffc306c-0ba3-45ac-a2de-a31883b9d98a">
+            <interfaceMoniker
+              Id="f7b33570-d9f8-4355-b9a9-5a084c09fe79"
+              LastKnownName="IMachine"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="795bec4c-a3ad-4897-925c-fcf5449d8ea6"
+            isDerived="false"
+            sourceEndRoleName="MachineProxy"
+            targetEndRoleName="GumballMachine"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ea66db29-75f7-4335-b875-16f0a1d02c56"
+              LastKnownName="GumballMachine"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3fc5985e-2b89-45df-95ca-0d560bcfb734"
+                  name="MachineProxy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="135c29f1-0f49-4db8-b489-bb5815fb0c05"
+                  name="GumballMachine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="69070c3c-8ed9-42d1-8ce5-1a184433e64c"
+            name="GumballMachine"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="af4b750b-091d-48da-ab11-06c8ee3b588c"
+            name="GetLocation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8d1f263e-a148-4e54-bbbd-8e2cc666e91e"
+            name="GetStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
