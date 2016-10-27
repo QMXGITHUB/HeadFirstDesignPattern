@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2efe025a-6689-432e-9f55-b54894b295ed" name="ProxyStrategy" linkedPackageId="955b0222-0907-4354-acb6-3afe614ff6e0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="80a481f1-2494-4da0-95a0-cc3c26daf410">
+      <profileInstance Id="edd74d0f-b930-4463-8dfa-1b0550666d06" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2c087726-1229-4aad-ba55-2f3f069a2a24">
+      <profileInstance Id="3a190a69-1e70-485f-a73b-841d3c731424" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="249bd2cf-0425-497c-aa11-e3010cac7a3f" name="Subject" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d0287632-f480-47d0-a9dc-f90c855c78c9" />
+        <ownedOperations>
+          <operation Id="ddfab874-e78c-4b0d-bd65-410e9e87c4ab" name="request" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f7cf09b-3ab5-4ccf-9958-de62cdcaa2a6" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b23fae0d-77c1-4f8f-8408-a81bf0c17acb" name="RealSubject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac048989-86db-459d-9f2c-98ac0c5d6c5d" />
+        <suppliersInternal>
+          <interfaceRealization Id="f5a6ab4b-499f-446e-8f8a-ab93fd7420a6">
+            <interfaceMoniker Id="249bd2cf-0425-497c-aa11-e3010cac7a3f" LastKnownName="Subject" />
+            <elementDefinition Id="3e775232-0182-4610-b50c-6f57a34ba4bd" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="53e16762-31f7-4821-92ad-7a3c8db99232" name="request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37fa6ef0-02e7-4e61-9e7e-a16419e9b61e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea7e9db1-d4ee-4752-90c5-429d01d59c5b" name="Proxy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d5a08be3-e663-4ed9-8efc-5694a4860738" />
+        <suppliersInternal>
+          <interfaceRealization Id="10166f8b-5c5e-4270-8440-af00b2e4f81d">
+            <interfaceMoniker Id="249bd2cf-0425-497c-aa11-e3010cac7a3f" LastKnownName="Subject" />
+            <elementDefinition Id="54bb2ad0-9694-404a-b6d9-2a7a94efe29a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="69208878-76d2-4341-87d2-63d961aad302" isDerived="false" sourceEndRoleName="Proxy" targetEndRoleName="RealSubject" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b23fae0d-77c1-4f8f-8408-a81bf0c17acb" LastKnownName="RealSubject" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="486f8911-c5eb-4049-b4a2-5e993111f8ec" name="Proxy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3277cc86-ad2a-492b-a6d2-69fefbbd632b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d8389f7-d39a-4044-9b55-ac1051066559" name="RealSubject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ccfbb4ae-ed71-4090-8db3-6238029ddb0f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5e1f627d-08ad-4678-8487-2f939b7310c6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="91bb4b90-089f-4840-9ead-ca5fffd36709" name="GumballMachine" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11b191aa-c10a-49ff-8e2d-d895b90adefa" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="76b5c0af-1490-4347-a86f-b37dd5d0b868" name="request" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3b1d936a-f534-4927-9967-b2523c50f373" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="955b0222-0907-4354-acb6-3afe614ff6e0" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>

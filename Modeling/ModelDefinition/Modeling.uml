@@ -167,6 +167,134 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d0287632-f480-47d0-a9dc-f90c855c78c9"
+        name="Subject"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="3f7cf09b-3ab5-4ccf-9958-de62cdcaa2a6"
+            name="request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac048989-86db-459d-9f2c-98ac0c5d6c5d"
+        name="RealSubject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="3e775232-0182-4610-b50c-6f57a34ba4bd">
+            <interfaceMoniker
+              Id="d0287632-f480-47d0-a9dc-f90c855c78c9"
+              LastKnownName="Subject"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="37fa6ef0-02e7-4e61-9e7e-a16419e9b61e"
+            name="request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d5a08be3-e663-4ed9-8efc-5694a4860738"
+        name="Proxy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="54bb2ad0-9694-404a-b6d9-2a7a94efe29a">
+            <interfaceMoniker
+              Id="d0287632-f480-47d0-a9dc-f90c855c78c9"
+              LastKnownName="Subject"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="5e1f627d-08ad-4678-8487-2f939b7310c6"
+            isDerived="false"
+            sourceEndRoleName="Proxy"
+            targetEndRoleName="RealSubject"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ac048989-86db-459d-9f2c-98ac0c5d6c5d"
+              LastKnownName="RealSubject"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3277cc86-ad2a-492b-a6d2-69fefbbd632b"
+                  name="Proxy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ccfbb4ae-ed71-4090-8db3-6238029ddb0f"
+                  name="RealSubject"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="11b191aa-c10a-49ff-8e2d-d895b90adefa"
+            name="GumballMachine"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3b1d936a-f534-4927-9967-b2523c50f373"
+            name="request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
