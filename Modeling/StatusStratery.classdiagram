@@ -9,20 +9,6 @@
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="c39cb0ff-5e28-4724-8c38-5eea92635c9a">
-      <profileInstance Id="8386021f-83c3-4d01-9fa1-2d582686a48c" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4874f15d-e6bc-4f1c-9285-7d6e95ded8ca">
-      <profileInstance Id="0101a63c-1e3b-41c3-86d0-6fcb60990801" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="ef37aa0a-edcd-4ce8-8f7c-ce4157e6ce15" name="Context" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -37,10 +23,10 @@
           <property Id="2e920f6f-9293-4ae6-96cb-1898ae33a59d" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9bde9120-bc5b-42df-98b2-73f7a11fd1fb" />
           </property>
-          <property Id="2f81f02a-c0f1-417c-b0d6-af5c0e1ea135" name="HasQuarter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="2f81f02a-c0f1-417c-b0d6-af5c0e1ea135" name="ConcreteStateA" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4488df5b-db49-45f2-be28-835aa34c6d70" />
           </property>
-          <property Id="6b6faa60-1cc2-4635-b9c1-c0249f369dfb" name="NoQuarter" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="6b6faa60-1cc2-4635-b9c1-c0249f369dfb" name="ConcreteStateB" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="bcba014e-1fbb-4b2a-aaba-494dd6ba5bf9" />
           </property>
         </ownedAttributesInternal>
@@ -62,7 +48,7 @@
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c3711753-e624-4c16-9ff1-a35b2ea09342" name="HasQuarter" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c3711753-e624-4c16-9ff1-a35b2ea09342" name="ConcreteStateA" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="062c2c96-b625-4c0a-966b-448a9a23a828" />
         <suppliersInternal>
           <interfaceRealization Id="f2f4f070-09a0-4da5-a033-4f117725ae3c">
@@ -78,7 +64,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8d801bb6-7d9e-4dfa-882a-8f09b5e9907c" name="NoQuarter" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8d801bb6-7d9e-4dfa-882a-8f09b5e9907c" name="ConcreteStateB" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0e08c901-7130-464d-8d51-441e0e2e012d" />
         <suppliersInternal>
           <interfaceRealization Id="c136ce10-f0e3-4b90-9b98-b4a75750be44">
@@ -96,5 +82,19 @@
   </packagedElements>
   <package Id="724b0410-b506-4e88-b15d-29fcb9960588" name="Modeling">
     <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c39cb0ff-5e28-4724-8c38-5eea92635c9a">
+        <profileInstance Id="8386021f-83c3-4d01-9fa1-2d582686a48c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4874f15d-e6bc-4f1c-9285-7d6e95ded8ca">
+        <profileInstance Id="0101a63c-1e3b-41c3-86d0-6fcb60990801" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
