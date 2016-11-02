@@ -295,6 +295,130 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="48e15578-aa47-4616-959e-81387806e7cf"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6a7ba794-fc2d-418b-8c0f-6110ccb2bd1c"
+        name="Creator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="b06797b2-46d6-4f52-94ae-f4659e5312b0"
+            name="FactoryMethod"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e0b18075-636f-4e13-96e6-b01e1cdc5439"
+            name="Operation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="78ce95dd-b8de-478b-af7c-6f555ff567ea"
+        name="ConcreteCreator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1c88176e-909d-41d9-8147-6631013691ef"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6a7ba794-fc2d-418b-8c0f-6110ccb2bd1c"
+              LastKnownName="Creator"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="a702089b-694e-49b0-bdef-6353c498d55f"
+            isDerived="false"
+            sourceEndRoleName="ConcreteCreator"
+            targetEndRoleName="ConcreteProduct"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8071b716-d45b-4e6e-a074-e15fbb02aaee"
+              LastKnownName="ConcreteProduct"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f15068e-ead9-4c97-b844-547b8f52cf52"
+                  name="ConcreteCreator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd503907-b184-410f-b11a-3ccf6a716556"
+                  name="ConcreteProduct"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="f5624138-2e47-4ce8-ab98-1f5959b47397"
+            name="FactoryMethod"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8071b716-d45b-4e6e-a074-e15fbb02aaee"
+        name="ConcreteProduct"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="50585818-f606-413c-9153-a3c5fc0d4325"
+            isSubstitutable="false">
+            <classMoniker
+              Id="48e15578-aa47-4616-959e-81387806e7cf"
+              LastKnownName="Product"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

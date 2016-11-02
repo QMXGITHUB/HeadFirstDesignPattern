@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="937af1ef-ddf8-4057-b5ac-d04cffb928c6" name="FactoryStrategy" linkedPackageId="f62fb608-f46a-4c07-bcfb-19849581f7db" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d790e78b-701e-41e4-a3ca-fd415405fc45">
+      <profileInstance Id="c6ec73b2-dfc9-4fb1-9ddc-d888ea00c6f5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1b769baa-59f3-41fb-96a7-e307a1117c28">
+      <profileInstance Id="bb34f0be-33d0-4910-83a3-4a8cd6602a6e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6c94fe89-03ae-438f-8d0a-a69c3638ad68" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="48e15578-aa47-4616-959e-81387806e7cf" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="90ae6d6b-b9e5-4425-b206-e416b816f5eb" name="Creator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6a7ba794-fc2d-418b-8c0f-6110ccb2bd1c" />
+        <ownedOperationsInternal>
+          <operation Id="2111e081-6a73-416f-b509-189f57f16676" name="FactoryMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b06797b2-46d6-4f52-94ae-f4659e5312b0" />
+          </operation>
+          <operation Id="6e75f36f-541b-4cb0-aa12-79324b64edb0" name="Operation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0b18075-636f-4e13-96e6-b01e1cdc5439" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="09eff615-e654-4601-aeb6-888079e8da84" name="ConcreteCreator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="78ce95dd-b8de-478b-af7c-6f555ff567ea" />
+        <generalsInternal>
+          <generalization Id="84f2e342-9c33-4945-bed3-b9ed883d6171" isSubstitutable="false">
+            <classMoniker Id="90ae6d6b-b9e5-4425-b206-e416b816f5eb" LastKnownName="Creator" />
+            <elementDefinition Id="1c88176e-909d-41d9-8147-6631013691ef" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="6ae3fb2b-99a9-4b3c-bfce-9129f62ec059" isDerived="false" sourceEndRoleName="ConcreteCreator" targetEndRoleName="ConcreteProduct" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c4b0af4f-73a6-49cf-98b7-ba887f717a21" LastKnownName="ConcreteProduct" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6007e75-d153-48a5-a185-720f923d77e9" name="ConcreteCreator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f15068e-ead9-4c97-b844-547b8f52cf52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c50deaba-dc56-455c-ac72-85c5943fd074" name="ConcreteProduct" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd503907-b184-410f-b11a-3ccf6a716556" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a702089b-694e-49b0-bdef-6353c498d55f" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="17f8fc00-e0c3-4fbf-a7d0-e0e2f301d6ce" name="FactoryMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5624138-2e47-4ce8-ab98-1f5959b47397" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c4b0af4f-73a6-49cf-98b7-ba887f717a21" name="ConcreteProduct" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8071b716-d45b-4e6e-a074-e15fbb02aaee" />
+        <generalsInternal>
+          <generalization Id="2deed791-cb4a-498d-be9d-cb1b09b2a2b9" isSubstitutable="false">
+            <classMoniker Id="6c94fe89-03ae-438f-8d0a-a69c3638ad68" LastKnownName="Product" />
+            <elementDefinition Id="50585818-f606-413c-9153-a3c5fc0d4325" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f62fb608-f46a-4c07-bcfb-19849581f7db" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>
