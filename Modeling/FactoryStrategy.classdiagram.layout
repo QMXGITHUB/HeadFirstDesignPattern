@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FactoryStrategy">
+  <logicalClassDesignerModelMoniker Id="e863d5d2-31bd-411a-8389-9402bbd2ab55" />
+  <nestedChildShapes>
+    <classShape Id="65811bf0-1af2-40b7-80c4-42d66093fde0" absoluteBounds="4.75, 0.5, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f018f7a9-297b-46c9-aeb4-009b2b115435" LastKnownName="PizzaStore" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="98a68de8-30fb-41de-ac59-4d66e2377c91" absoluteBounds="4.765, 0.89000000000000012, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a0975aa4-06fe-4a4c-8131-04b7e8d72c45" absoluteBounds="4.765, 1.1011718675494193, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5e1e36d-a597-4281-8f00-6d458cb80bef" absoluteBounds="3.25, 2.125, 1.5, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="14095b3a-367a-482a-bf70-e6ffb0aff25e" LastKnownName="NYPizzaStore" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="68bfaddc-b6f6-4f0d-88b0-cfb3bbdc9c56" absoluteBounds="3.2649999999999997, 2.5149999999999997, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3a0faa57-0305-41fc-8f57-807837685f52" absoluteBounds="3.2649999999999997, 2.7261718675494198, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(4 : 2.125); (4 : 1.97265622516473); (5.02295920187841 : 1.97265622516473); (5.02295920187841 : 1.72265622516473)]" fixedFrom="NotFixed" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="e5458cc0-b854-4605-8a19-1a8bf975465c" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="d5e1e36d-a597-4281-8f00-6d458cb80bef" />
+        <classShapeMoniker Id="65811bf0-1af2-40b7-80c4-42d66093fde0" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="f3a8bf14-bb1b-4a3b-89f5-a202eb070b16" absoluteBounds="6.125, 2.125, 2, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="21902588-9d81-496d-9f9e-7d5ca04afb51" LastKnownName="ChicagoPizzaStore" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="72cf1d7d-29cb-4d07-a453-ec2a8f62dd74" absoluteBounds="6.14, 2.515, 1.9700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="82cbf77c-058c-4f56-b85a-adcab5e57482" absoluteBounds="6.14, 2.7261718675494193, 1.9700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(7.125 : 2.125); (7.125 : 1.96265622516473); (6.03124998101876 : 1.96265622516473); (6.03124998101876 : 1.72265622516473)]" fixedFrom="NotFixed" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="16df7668-428d-40b9-a0ec-d4780a8f56eb" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="f3a8bf14-bb1b-4a3b-89f5-a202eb070b16" />
+        <classShapeMoniker Id="65811bf0-1af2-40b7-80c4-42d66093fde0" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="9c6b9db4-8174-4631-be45-8ff0d7439c57" absoluteBounds="4.875, 3.5, 1.5, 1.5429687152306242" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" LastKnownName="Pizza" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="c685ec27-159e-452f-b04e-e1a011c5aad0" absoluteBounds="4.89, 3.8899999999999997, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="6dca9808-750f-4de1-81b5-6d0099b0ce14" absoluteBounds="4.89, 4.10117186754942, 1.4700000000000002, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68153f3b-2c3c-40f5-9c4a-69ee2cb4d539" isExpanded="false" absoluteBounds="2, 5.5, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="919f8166-be5c-42a5-9b23-91e01bc0b9dd" LastKnownName="NYCheesePizza" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1eb7c066-ca67-4a35-a348-26b53b7ada9b" absoluteBounds="2.015, 5.89, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ee3d11e5-45ba-489e-89f2-5ff3088bbaeb" absoluteBounds="2.015, 6.10117186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(2.75 : 5.5); (2.75 : 5.25); (5.1373457007187 : 5.25); (5.1373457007187 : 5.04296871523062)]" fixedFrom="NotFixed" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="c834ff68-41c1-4ae2-95e8-005796c39448" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="68153f3b-2c3c-40f5-9c4a-69ee2cb4d539" />
+        <classShapeMoniker Id="9c6b9db4-8174-4631-be45-8ff0d7439c57" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="0e12a82b-be55-48c8-ac2f-cf19c1dd81e0" isExpanded="false" absoluteBounds="2.625, 5.75, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6f6d144b-dedb-469c-8bad-05fcdc727a94" LastKnownName="NYVeggiePizza" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ac532627-e4d8-445b-b165-351f0f01920f" absoluteBounds="2.6399999999999997, 6.14, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="8a253a07-2db2-489f-937d-19446a17a12b" absoluteBounds="2.6399999999999997, 6.35117186754942, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(4.125 : 6); (5.38821414738985 : 6); (5.38821414738985 : 5.04296871523062)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="cd8577da-2b01-4400-9984-dd18ff0320d0" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="0e12a82b-be55-48c8-ac2f-cf19c1dd81e0" />
+        <classShapeMoniker Id="9c6b9db4-8174-4631-be45-8ff0d7439c57" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="bdb820ea-b138-4d4b-a195-0d641fc84750" isExpanded="false" absoluteBounds="7.625, 5.75, 1.875, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="39a7ae2a-b96c-4cf9-8a62-9a32b99ac739" LastKnownName="ChicagoCheesePizza" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1fc17348-441c-472a-b5f4-ea140b36fafb" absoluteBounds="7.6400000000000006, 6.14, 1.8450000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b0ad6a5c-d202-4fc2-9ea5-edaf4927b0ab" absoluteBounds="7.6400000000000006, 6.35117186754942, 1.8450000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(8.5625 : 5.75); (8.5625 : 5.41796871523063); (6.16034192764034 : 5.41796871523063); (6.16034192764034 : 5.04296871523062)]" fixedFrom="NotFixed" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="1c35c070-6773-49bf-ad33-4acffa3db539" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="bdb820ea-b138-4d4b-a195-0d641fc84750" />
+        <classShapeMoniker Id="9c6b9db4-8174-4631-be45-8ff0d7439c57" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="370f3da7-41a9-4d16-bb23-a97612bc5fab" isExpanded="false" absoluteBounds="6.625, 6, 1.75, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="436e0694-82b9-47c1-9420-d223c2ddece4" LastKnownName="ChicagoVeggiePizza" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="f4909061-14b3-481a-874b-0588a75355e5" absoluteBounds="6.64, 6.39, 1.9700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9a5b6414-145c-4b23-acb7-2d0d030ed50b" absoluteBounds="6.64, 6.60117186754942, 1.9700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(6.625 : 6.30645161290323); (5.95289737156931 : 6.30645161290323); (5.95289737156931 : 5.04296871523062)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="0ea530b7-0af4-4c56-9772-a4885aa5c797" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="370f3da7-41a9-4d16-bb23-a97612bc5fab" />
+        <classShapeMoniker Id="9c6b9db4-8174-4631-be45-8ff0d7439c57" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

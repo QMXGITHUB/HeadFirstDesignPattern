@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e863d5d2-31bd-411a-8389-9402bbd2ab55" name="FactoryStrategy" linkedPackageId="94569ab8-aad8-4acd-a92b-7fa126449015" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9790e5e2-da62-4b6c-a015-753cbd8ba027">
+      <profileInstance Id="98745ceb-c580-40ff-b56e-c050c5329d23" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="83da4224-3723-4391-ba65-06ce1f76ac6f">
+      <profileInstance Id="bc8a7811-27f6-42fb-bc0d-1bee47756aea" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f018f7a9-297b-46c9-aeb4-009b2b115435" name="PizzaStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f0503e7d-6c68-49f9-be23-d8ebc0e8072f" />
+        <ownedOperationsInternal>
+          <operation Id="70083ffc-469c-42bf-83a7-a8833a58783d" name="CreatePizza" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0bc40bde-2749-4876-bc70-f846fae5a2db" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="efee0333-fd83-4d2e-9150-77a46017fd2d" name="type" direction="In" isUnique="false">
+                  <elementDefinition Id="07cb84e9-9f9a-4589-b145-38cb6b45247f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="175e00a4-8cce-4b2c-b79a-c0b14fc4eea0" name="OrderPizza" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c7060eaa-6fcc-418c-a09a-92fd97af85d2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b4c3b39d-7b3a-4dbc-a9af-383add070aeb" name="type" direction="In" isUnique="false">
+                  <elementDefinition Id="5b3d7fc2-14fb-489b-83e5-e830eb36e3fa" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="14095b3a-367a-482a-bf70-e6ffb0aff25e" name="NYPizzaStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4957fa54-05e7-48b2-824a-07fcebb42c16" />
+        <generalsInternal>
+          <generalization Id="e5458cc0-b854-4605-8a19-1a8bf975465c" isSubstitutable="false">
+            <classMoniker Id="f018f7a9-297b-46c9-aeb4-009b2b115435" LastKnownName="PizzaStore" />
+            <elementDefinition Id="f60f557f-794b-45a5-8dda-b0e924fc3753" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="31bea096-c003-410b-9c1f-798d862e1a93" name="CreatePizza" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="743c5221-3fb6-43a4-9bd6-3c3b6c71945a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="21902588-9d81-496d-9f9e-7d5ca04afb51" name="ChicagoPizzaStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86989d14-2ceb-49ad-8ed6-7085fe9e0a69" />
+        <generalsInternal>
+          <generalization Id="16df7668-428d-40b9-a0ec-d4780a8f56eb" isSubstitutable="false">
+            <classMoniker Id="f018f7a9-297b-46c9-aeb4-009b2b115435" LastKnownName="PizzaStore" />
+            <elementDefinition Id="9ae963df-f190-49ff-be5d-d5e6a108d1cf" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="55d5bf76-528d-4c42-8533-aee7b7b6373c" name="CreatePizza" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a6497f7-87fa-4c0d-a20d-18fb5a2f5d20" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" name="Pizza" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2c905bc-53c5-48c4-838f-ee8a05ca13b9" />
+        <ownedOperationsInternal>
+          <operation Id="45379c36-a1b3-4b16-a391-939784fb83a0" name="Prepare" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="27c5c841-2333-4bf4-81c6-3a597cfc4c8b" />
+          </operation>
+          <operation Id="7e89351f-2a3c-4bd7-baf8-7313d7e41ac6" name="Bake" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a0ed1203-cf9d-489e-b765-179a66d7100d" />
+          </operation>
+          <operation Id="55824ba5-934b-4ec2-afb0-10fae13bb8a2" name="Cut" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bff1e1f0-e733-4142-a2ee-350d8906a0eb" />
+          </operation>
+          <operation Id="f067ae78-6a43-4bba-a771-fc339589a35e" name="Box" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="25a49be6-915c-4af8-8127-6e2c22a5eed1" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="919f8166-be5c-42a5-9b23-91e01bc0b9dd" name="NYCheesePizza" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce4da760-8d8c-4c5f-81ec-adc2a3032135" />
+        <generalsInternal>
+          <generalization Id="c834ff68-41c1-4ae2-95e8-005796c39448" isSubstitutable="false">
+            <classMoniker Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" LastKnownName="Pizza" />
+            <elementDefinition Id="4196eeba-9214-436c-8f36-69a5f92e2b85" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6f6d144b-dedb-469c-8bad-05fcdc727a94" name="NYVeggiePizza" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="af28b26d-8663-4a19-9e3b-6e745d896f46" />
+        <generalsInternal>
+          <generalization Id="cd8577da-2b01-4400-9984-dd18ff0320d0" isSubstitutable="false">
+            <classMoniker Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" LastKnownName="Pizza" />
+            <elementDefinition Id="ebe92ada-74b2-40d8-a87d-f581f39dab0c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="39a7ae2a-b96c-4cf9-8a62-9a32b99ac739" name="ChicagoCheesePizza" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9383422f-9a0e-46a5-b8c9-d8931751ed13" />
+        <generalsInternal>
+          <generalization Id="1c35c070-6773-49bf-ad33-4acffa3db539" isSubstitutable="false">
+            <classMoniker Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" LastKnownName="Pizza" />
+            <elementDefinition Id="2e0fa5fc-6f9c-4b3e-a399-34fd6b15ac12" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="436e0694-82b9-47c1-9420-d223c2ddece4" name="ChicagoVeggiePizza" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44705b68-3d7e-4b87-9093-f065778704b8" />
+        <generalsInternal>
+          <generalization Id="0ea530b7-0af4-4c56-9772-a4885aa5c797" isSubstitutable="false">
+            <classMoniker Id="6a3b4721-81bc-4cbb-b6a4-f5e5ae384c2a" LastKnownName="Pizza" />
+            <elementDefinition Id="81072322-0414-4c1f-9f02-0dadbe4abf9e" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="94569ab8-aad8-4acd-a92b-7fa126449015" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>
