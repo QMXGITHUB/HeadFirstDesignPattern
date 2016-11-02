@@ -8,7 +8,6 @@ namespace FactoryStrategy
 
         public PizzaStore(ConsoleStub console)
         {
-            // TODO: Complete member initialization
             this.console = console;
         }
         public Pizza OrderPizza(string style, string type)
