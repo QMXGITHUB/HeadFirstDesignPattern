@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5162cd00-4312-40ba-8a8f-7f1b527c4e61" name="AbstractFactoryStrategy" linkedPackageId="8a5d0f04-f042-4b27-81cb-b7b974c34524" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0f5a3b4c-5772-4167-9853-02a421bfe22d">
+      <profileInstance Id="388fb398-aec9-4683-ac4a-8228f1f1516f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aaee972c-9d52-404e-b873-3bcee10a47b1">
+      <profileInstance Id="ba818bab-eb73-4333-aa28-eca15bfc7d22" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="45d0ae80-c8a8-43df-b758-095159cedc15" name="NYPizzaStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="40bb6f12-abdf-4662-b492-1d34ec25bbcc" />
+        <generalsInternal>
+          <generalization Id="4178a577-9c3a-413b-b529-d9b9285cadc3" isSubstitutable="false">
+            <classMoniker Id="96825fdf-e8cc-4469-84c1-6495d0ad652c" LastKnownName="PizzaStore" />
+            <elementDefinition Id="d2361c8e-a4eb-4ce9-8e6f-d47818648c56" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="1cd593bf-8e9f-4ce9-a6e3-e9322dac7573" isDerived="false" sourceEndRoleName="NYPizzaStore" targetEndRoleName="PizzaIngredientFactory" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="667885dc-ac76-46d8-a909-0d65b69a812c" LastKnownName="PizzaIngredientFactory" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dcfe35c1-fa91-4268-9092-27499a51d07f" name="NYPizzaStore" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="01c014a7-542e-4756-812e-6ca335c7fbfe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94cd5359-5c8e-49f8-9df5-3f29b1b647f9" name="PizzaIngredientFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f681806-5910-4a76-90c7-be444dc1e6fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1a1db318-3eb0-4589-a0e8-719cc3d067f6" />
+          </association>
+          <association Id="095a786f-ff67-46fe-b290-a107d3b284ae" isDerived="false" sourceEndRoleName="   " targetEndRoleName="  " isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="3b2c0ab6-2a63-44cf-826a-e5dbc1bb5340" LastKnownName="Dough" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3610e94-4af0-4a5c-90f6-0b96632691f4" name="   " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="be574c02-b312-4c97-81d4-098ddaad751f" name="Lower">
+                      <elementDefinition Id="010a4130-b92a-4d4a-bd78-e2a20ae52531" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="15bed57f-b6c7-428e-beda-39587eb4159d" name="Upper">
+                      <elementDefinition Id="15c65234-f8fd-4b8b-955b-fbd4c61834de" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="10a3fce6-6402-4464-a7b8-318b61e48e65" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7aeec745-d6cf-42e0-b353-fb8fff0e9108" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="a61b274a-cf56-4f65-8069-8e83f7d5ebc0" name="Lower">
+                      <elementDefinition Id="9ce0bfcf-69a2-4c2f-8d3e-610596234f22" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d2a9f350-a65b-4d8e-a2dd-b04b289ada20" name="Upper">
+                      <elementDefinition Id="ce8ca06e-6f0e-4614-a420-9fb53bc4026b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c2af2c9e-05fe-47c1-ac34-aa14bef3b1db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3440d286-a774-44f5-a9a6-9b4b8f6f179a" />
+          </association>
+          <association Id="25366d95-6ecb-4573-8957-2154da0d80d7" isDerived="false" sourceEndRoleName="  " targetEndRoleName="  " isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="6ac86113-3cbd-4c4c-ad62-f6ab18e5d2f5" LastKnownName="Sauce" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4deea26a-f8cc-46f3-8ecb-02ec4b3089ba" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="0ae349a5-9b29-4f58-a3e0-b5e22e125cd3" name="Lower">
+                      <elementDefinition Id="f1d130eb-13d2-42ee-aa4c-2f23c84a7e19" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8476c23c-95cf-4105-9bd8-a582d45bf5e6" name="Upper">
+                      <elementDefinition Id="9d27f080-16dc-4b44-801b-a4c5df6f1b2a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2f2a9f08-2385-44fe-a3ae-db944e43a781" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fee94c23-9b75-4b8a-b2fc-203ba4f19b0b" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12c596cf-399f-4878-b14e-9f6eb150981f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e410e8ac-cf76-4e70-94ce-a235b21561f7" />
+          </association>
+          <association Id="2ea3647f-6200-4cb9-83ca-e06b71e2cfd6" isDerived="false" sourceEndRoleName="  " targetEndRoleName="    " isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="89c663ed-9c45-404d-b19e-b2f03bf94b30" LastKnownName="Cheese" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="358af2d9-2f43-4b34-9b62-a3dc671474a8" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="eaa8ac23-46b1-4cbb-94fe-5124bd03b80f" name="Lower">
+                      <elementDefinition Id="47720952-eecd-4a1a-a4ca-7757d0943302" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7d59c379-22ac-45aa-af9a-4d72f50a611d" name="Upper">
+                      <elementDefinition Id="7e853629-3e08-4752-b096-3003b12f4fd4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="1b604798-107c-4407-9621-b8e964dd109d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="354ac1c3-99ff-4454-97b3-0d6006dbdf16" name="    " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aea34c1b-2344-4b29-b981-097486d90a6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="98539615-6ecf-4294-b235-0442c35650b8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="96825fdf-e8cc-4469-84c1-6495d0ad652c" name="PizzaStore" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ec54e6d0-c085-4050-869d-baf199fb00ac" />
+        <ownedOperationsInternal>
+          <operation Id="da463c89-378e-4834-9631-076190469a82" name="CreatePizza" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7f8c0340-a32f-4988-ab9b-67408780756f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d77e21e7-3a9c-4d79-9a1b-903860c00128" name="NYPizzaIngredientFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="093c4f2b-25bc-4152-bf60-ec0d19906b7d" />
+        <suppliersInternal>
+          <interfaceRealization Id="0c08ea4c-05f8-4c71-bd69-881f20d804f8">
+            <interfaceMoniker Id="667885dc-ac76-46d8-a909-0d65b69a812c" LastKnownName="PizzaIngredientFactory" />
+            <elementDefinition Id="61813a67-afda-492d-a928-d157c145bf61" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="82a511fb-f216-41d9-bea3-c19264a0f148" isDerived="false" sourceEndRoleName="  " targetEndRoleName="  " isLeaf="false" isAbstract="false">
+            <classMoniker Id="03873a4f-310a-4de9-88fd-62998af6f78c" LastKnownName="ThinCrustDough" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f19fe117-9aa7-416d-9fbb-deaa2fc4ccff" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="120fd1a7-04b7-4fa2-99dd-da9f18b3eef1" name="Lower">
+                      <elementDefinition Id="977a424b-bfa8-4b7f-9172-e27045bd2ad0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a1941152-e165-4e59-8a9f-14ea51feb86b" name="Upper">
+                      <elementDefinition Id="69e4eb58-361a-4800-83a2-9247ac582e2a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="57f0526b-4c1a-4ae2-8972-47147806003a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="356175c1-2449-4c0f-a0b1-cb95a1248891" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3d834cf6-a829-4ec0-98d7-d013eb1fb834" name="Lower">
+                      <elementDefinition Id="bc7a173a-f6a3-4514-9846-7dd673ecb4ac" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ffa818a4-3465-4a3c-a289-132c170a94c7" name="Upper">
+                      <elementDefinition Id="bcac6fef-c538-4fd9-bac6-6a0bc1de895a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e5bd5526-a5fb-421b-be7c-f21a657f6753" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8a219585-0f1a-4bb4-9ab9-872a702cb286" />
+          </association>
+          <association Id="6cd5c439-2233-402b-9f25-23966649aa05" isDerived="false" sourceEndRoleName="   " targetEndRoleName="   " isLeaf="false" isAbstract="false">
+            <classMoniker Id="a1cd6218-c595-4e93-902c-f0afe5e144a1" LastKnownName="MarinaraSauce" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="985559e0-aa77-4cfa-aae4-aa33e0fda2c7" name="   " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="90e41603-f690-4778-9ed9-5b7c1864aff6" name="Lower">
+                      <elementDefinition Id="fcf2b2ea-a325-4b6b-a4bd-d93ffb5c1808" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="df3e8844-889c-4df1-80ca-bac5ee8be6b1" name="Upper">
+                      <elementDefinition Id="62a11548-8635-477b-8c9f-c27a104df9c4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9a05033e-6955-4246-a15b-afc8845a9955" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed5d67c1-ca38-4ffe-932b-1405e1d07268" name="   " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="febdec33-833a-4e2d-8174-7d04791a8282" name="Lower">
+                      <elementDefinition Id="9092b374-4c6f-44ec-8909-66b571471101" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="99465c8d-1f93-470e-aa0b-beee150924e3" name="Upper">
+                      <elementDefinition Id="5ac4fbab-2437-4715-89cf-e7a4cb023620" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d1d6bb53-288f-4a01-a012-b26642104690" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="07d73590-9330-45fc-97e7-db8b5cc35294" />
+          </association>
+          <association Id="e9d12a5f-2e33-420c-8692-4a59ba409b9d" isDerived="false" sourceEndRoleName="  " targetEndRoleName="  " isLeaf="false" isAbstract="false">
+            <classMoniker Id="c01061e1-0e6c-41ae-9283-7cd9f3a73bfc" LastKnownName="ReggianoCheese" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f4b8620a-6ba2-45ef-b85d-cccd24e21a4c" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1773384b-f9ab-4588-a9b8-a40ab1179cfb" name="Lower">
+                      <elementDefinition Id="cfc00621-b607-4d80-808d-da3e95e05304" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1fad3707-59ac-4b0a-95e7-0f66f05df7e4" name="Upper">
+                      <elementDefinition Id="acce8b56-6910-42bb-9d59-3e39e82c705f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bf00225d-231e-49ac-9cd6-27c2eac9529d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f150980-7f0d-4df2-ba95-043fcf5b526f" name="  " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="326ed934-1c8b-4307-8670-bb823085cf8a" name="Lower">
+                      <elementDefinition Id="c6257aa0-ac7a-4ff1-9194-388f5b6e72eb" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="52cc9903-e11c-4da0-bff8-e7684ab1b4c7" name="Upper">
+                      <elementDefinition Id="ff65d5de-e6b5-4e44-810b-f6b5efa36267" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="302faef9-8254-4c2f-938b-7d8e7d2911fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3dbf77c7-8b03-48c0-a3ad-1fe48d07b61f" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="dfdecf11-84d0-469f-9426-4d7116b35979" name="CreateCheese" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="63bcc075-9506-4d8e-aacb-c8b534691638" />
+          </operation>
+          <operation Id="e5e04253-e4c9-4b0e-aed0-50de71bca950" name="CreateDough" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="09c42cdd-82d0-4911-90fd-a39c9bb74392" />
+          </operation>
+          <operation Id="b2fa48ed-b745-4b2e-842b-b7dee29147b3" name="CreateSauce" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f46f3134-0aed-4876-9c33-495678ebe30e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="667885dc-ac76-46d8-a909-0d65b69a812c" name="PizzaIngredientFactory" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb559c1f-c85f-417c-bf27-b2b8f4a3eb0c" />
+        <ownedOperations>
+          <operation Id="3e59e165-d390-4a8d-92a4-434e01c7473b" name="CreateCheese" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4bd4383e-160b-4cf9-9b82-8402abef2065" />
+          </operation>
+          <operation Id="27d45313-897f-4eed-9ff8-9c17fbfd432a" name="CreateDough" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5916c8a8-c1f9-4f84-8c19-fa73d0e3c3a4" />
+          </operation>
+          <operation Id="fc8915ef-1141-4d5c-8ca2-48e28fa57d71" name="CreateSauce" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fcb43dc3-0ffc-4a09-a1a7-9c105ace0e70" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3b2c0ab6-2a63-44cf-826a-e5dbc1bb5340" name="Dough" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d94e669-0060-4181-9182-fe5afe7d9009" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6ac86113-3cbd-4c4c-ad62-f6ab18e5d2f5" name="Sauce" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8d99a31-81fe-4b9f-b70c-b4e85100d35d" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="89c663ed-9c45-404d-b19e-b2f03bf94b30" name="Cheese" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bdc222f-1079-4743-a830-5b276165c283" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="03873a4f-310a-4de9-88fd-62998af6f78c" name="ThinCrustDough" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="84679ab8-d0b7-47e8-876b-88199df3fd43" />
+        <suppliersInternal>
+          <interfaceRealization Id="a1a347ea-8c53-490d-83c4-f5dac0f5e7a0">
+            <interfaceMoniker Id="3b2c0ab6-2a63-44cf-826a-e5dbc1bb5340" LastKnownName="Dough" />
+            <elementDefinition Id="f9d91765-ae90-4439-bf08-27563023d808" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1cd6218-c595-4e93-902c-f0afe5e144a1" name="MarinaraSauce" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb6a4cfc-147d-404c-8df1-d47b1f236106" />
+        <suppliersInternal>
+          <interfaceRealization Id="07934bfd-5f3f-4174-a214-dc21e01502ce">
+            <interfaceMoniker Id="6ac86113-3cbd-4c4c-ad62-f6ab18e5d2f5" LastKnownName="Sauce" />
+            <elementDefinition Id="c2132c39-e14b-4d3f-b053-90c2de5683f8" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c01061e1-0e6c-41ae-9283-7cd9f3a73bfc" name="ReggianoCheese" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5946f877-d357-41d4-9c16-26eed5572d66" />
+        <suppliersInternal>
+          <interfaceRealization Id="a1a484d1-9eb4-4ca7-85a2-f15d28e1a1fd">
+            <interfaceMoniker Id="89c663ed-9c45-404d-b19e-b2f03bf94b30" LastKnownName="Cheese" />
+            <elementDefinition Id="2d90748a-7d90-4ea0-97d4-5d3028ebce28" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="8a5d0f04-f042-4b27-81cb-b7b974c34524" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>
