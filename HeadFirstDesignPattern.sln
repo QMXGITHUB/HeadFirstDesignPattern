@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactoryStrategy", "Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryStrategy", "FactoryStrategy\FactoryStrategy.csproj", "{73AE56F6-AF3E-4990-9E3D-21986AB6DB9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbastractFactoryStrategy", "AbastractFactoryStrategy\AbastractFactoryStrategy.csproj", "{0BE8B368-ED46-4C1A-8833-609981D4AFC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{73AE56F6-AF3E-4990-9E3D-21986AB6DB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AE56F6-AF3E-4990-9E3D-21986AB6DB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AE56F6-AF3E-4990-9E3D-21986AB6DB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
