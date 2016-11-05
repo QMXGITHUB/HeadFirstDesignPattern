@@ -419,6 +419,588 @@
         </generalsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="032dba7f-6d5f-45a2-aab2-b9f03b4dbc69"
+        name="AbstractFactory"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="e19ed687-2209-43e2-a042-aa791398dbe1"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5f2042bd-db21-4aa8-b667-c58744122753"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad14239b-2e94-4c68-a337-c3db93600573"
+        name="ConcreteFactory1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7b2ed007-be21-4205-a7e7-e59ac4e24813">
+            <interfaceMoniker
+              Id="032dba7f-6d5f-45a2-aab2-b9f03b4dbc69"
+              LastKnownName="AbstractFactory"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a7c62ab0-5e89-410f-8a7b-68b4a97d2e41"
+            isDerived="false"
+            sourceEndRoleName="  "
+            targetEndRoleName="   "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="754b161f-27b4-441a-acef-73a375d93658"
+              LastKnownName="ProductB1"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd83a6e3-bf44-4926-9370-8cfcc43966c4"
+                  name="  "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2b2e466d-f25f-42e1-81fa-07ff0a43c5c9"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="75f560c4-102a-42d3-b672-0c97c7f2b139"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2bb96a23-2bd8-4199-a204-fbe7b6d41787"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa931bce-bb2e-4778-a671-c4a61e8db3d7"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7e6e8be3-0616-464c-b7cb-dcf7a4604e10"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ba5cdfdf-f960-4f3e-9cbb-8b70e8291efb"
+            isDerived="false"
+            sourceEndRoleName="  "
+            targetEndRoleName="  "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="26d99349-5b86-4fad-ad66-b0c82bafa2e1"
+              LastKnownName="ProductA1"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ccd1a2d5-7f82-4f80-b2e8-54f57149a08b"
+                  name="  "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1034e66c-2c1b-498d-975e-b7ca8dad0313"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f86b6253-fb66-4699-b7ca-17106cf67ca3"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4574ae4-6cf3-40ab-859a-d0ceaec7a38c"
+                  name="  "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4d597b3e-3569-4ee4-9cdc-8997a26fc7bc"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2ae3c886-85fe-4a9a-8a86-f576c5502998"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="2ff00745-75b7-4eec-8d09-91242f2cf34b"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="52e0d129-ef50-466f-8c4c-f2d53b3618ac"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d7caf77-ffd9-4537-8fd1-97f17ed0b040"
+        name="ConcreteFactory2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="3a906b6d-ca25-4be3-8835-bf41ce8963b5">
+            <interfaceMoniker
+              Id="032dba7f-6d5f-45a2-aab2-b9f03b4dbc69"
+              LastKnownName="AbstractFactory"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="38ba88e7-03a4-4da7-bf49-8df5739a02c7"
+            isDerived="false"
+            sourceEndRoleName="    "
+            targetEndRoleName="   "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b007af50-74d5-47c4-ba35-13aa17c52181"
+              LastKnownName="ProductA2"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fbcd197e-aa73-4147-b9fb-e756886dcc8a"
+                  name="    "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6128e241-824e-4fb2-a115-dc94863333e1"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b708fcf5-f2e3-4acf-9eb5-52f1cffcc932"
+            isDerived="false"
+            sourceEndRoleName="   "
+            targetEndRoleName="   "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5c263fab-c15a-47d0-a672-4d3d4fda9b09"
+              LastKnownName="ProductB2"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18e5cd50-6fd9-47aa-888f-630131a49604"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49497cef-978f-4ac9-85ef-4b1f28dc6925"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="716f989e-8354-4028-a007-0e97fc8c6969"
+            name="CreateProductA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="18830609-8a65-4032-ba49-c19a8b5eee63"
+            name="CreateProductB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ba0a4a3e-b742-4ea3-b450-01429b75775c"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="73629166-3827-4cbc-8603-5b627ed8bcbb"
+            isDerived="false"
+            sourceEndRoleName="   "
+            targetEndRoleName="   "
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="032dba7f-6d5f-45a2-aab2-b9f03b4dbc69"
+              LastKnownName="AbstractFactory"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bad22f3d-88a3-40d8-9839-a94bc803d533"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ea3933f6-dd4c-4e8e-becd-57587f7146fe"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1a9efac7-b7d3-4cea-9974-66ac05eddf50"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6569cc0b-4aff-4591-857c-f79346db1df4"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8feb5834-dbe5-4a1d-b4dc-a0d91072dd47"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="95a5ce4b-2d55-4b43-8559-a8a72038eae2"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="60d4acf2-153c-434f-a415-2a493b19f7f2"
+            isDerived="false"
+            sourceEndRoleName="   "
+            targetEndRoleName="   "
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="181d223c-a5e8-43e7-91da-fc54e6f00ef5"
+              LastKnownName="AbstractProductA"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5370497a-6b97-4232-b573-299c9e9fc66d"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="56af0211-f354-4fe2-8233-278cbbbe359c"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="49f7d7b3-6162-405e-9b21-2e9c763404b5"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="401b1ef1-5adc-459d-9159-40a2ad30e61d"
+                  name="   "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c0e3a93-a52b-4422-b20f-c2fb3917c803"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e6bb8307-93d8-4648-8d96-2306762f7faa"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="02842ca4-ed06-477e-b49c-ede0598f3bf4"
+            isDerived="false"
+            sourceEndRoleName="    "
+            targetEndRoleName="    "
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="16b44865-b476-4c85-b86f-7078a84fe2ce"
+              LastKnownName="AbstractProductB"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ceaf143-d138-4752-a830-11d0f399741a"
+                  name="    "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="356fdc65-ffe0-4415-b8b2-c6a0d908a289"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1aaa9daa-ec34-4486-b68e-41b695793290"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa3173b4-627d-4738-8f70-b62437554c71"
+                  name="    "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5bd152e3-1b2e-440a-9526-0ac47cf1b4a3"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bc7d6227-eecb-4a0c-a812-0e9c068f27e1"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="181d223c-a5e8-43e7-91da-fc54e6f00ef5"
+        name="AbstractProductA"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="16b44865-b476-4c85-b86f-7078a84fe2ce"
+        name="AbstractProductB"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b007af50-74d5-47c4-ba35-13aa17c52181"
+        name="ProductA2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="665a00cc-b79c-4c15-a302-4f6cc0da6c97">
+            <interfaceMoniker
+              Id="181d223c-a5e8-43e7-91da-fc54e6f00ef5"
+              LastKnownName="AbstractProductA"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26d99349-5b86-4fad-ad66-b0c82bafa2e1"
+        name="ProductA1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="34689d02-affc-43e3-8aa3-30fec7afdf91">
+            <interfaceMoniker
+              Id="181d223c-a5e8-43e7-91da-fc54e6f00ef5"
+              LastKnownName="AbstractProductA"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c263fab-c15a-47d0-a672-4d3d4fda9b09"
+        name="ProductB2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a5d1ad7f-9304-44b7-b91d-50af72dfe6d6">
+            <interfaceMoniker
+              Id="16b44865-b476-4c85-b86f-7078a84fe2ce"
+              LastKnownName="AbstractProductB"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="754b161f-27b4-441a-acef-73a375d93658"
+        name="ProductB1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4c976c5a-54c3-40c5-866c-404bb159496f">
+            <interfaceMoniker
+              Id="16b44865-b476-4c85-b86f-7078a84fe2ce"
+              LastKnownName="AbstractProductB"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
