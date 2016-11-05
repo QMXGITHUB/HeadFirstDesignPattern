@@ -9,7 +9,6 @@ namespace AbastractFactoryStrategy
         protected Dough dough;
         protected Sauce sauce;
         protected Cheese Cheese;
-        protected Veggie[] veggies;
 
         protected Pizza(IConsole console)
         {

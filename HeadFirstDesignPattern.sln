@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryStrategy", "FactoryS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbastractFactoryStrategy", "AbastractFactoryStrategy\AbastractFactoryStrategy.csproj", "{0BE8B368-ED46-4C1A-8833-609981D4AFC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorStrategy", "DecoratorStrategy\DecoratorStrategy.csproj", "{FAEDF30D-4F8B-4A2D-B59D-BC551681651A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{F8AA150C-6C02-4643-A075-AF2AB6EA09BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE8B368-ED46-4C1A-8833-609981D4AFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAEDF30D-4F8B-4A2D-B59D-BC551681651A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAEDF30D-4F8B-4A2D-B59D-BC551681651A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAEDF30D-4F8B-4A2D-B59D-BC551681651A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAEDF30D-4F8B-4A2D-B59D-BC551681651A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AA150C-6C02-4643-A075-AF2AB6EA09BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AA150C-6C02-4643-A075-AF2AB6EA09BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AA150C-6C02-4643-A075-AF2AB6EA09BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AA150C-6C02-4643-A075-AF2AB6EA09BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
