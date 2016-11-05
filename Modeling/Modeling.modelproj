@@ -22,34 +22,6 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="AbastractFactoryStrategy.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="AbastractFactoryStrategy.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>AbastractFactoryStrategy.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="FactoryStrategy.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="FactoryStrategy.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>FactoryStrategy.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="ProxyStrategy.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="ProxyStrategy.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>ProxyStrategy.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="StatusStratery.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="StatusStratery.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>StatusStratery.classdiagram</DependentUpon>
-    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Modeling.uml">
       <SubType>Content</SubType>

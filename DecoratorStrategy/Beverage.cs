@@ -16,7 +16,7 @@
     {
         protected string description = "Unknown Beverage";
 
-        public string GetDescription()
+        public virtual string GetDescription()
         {
             return description;
         }

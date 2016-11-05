@@ -8,8 +8,9 @@ namespace DecoratorStrategy
         public void mocha_HouseBlend()
         {
             Beverage houseBlend = new HouseBlend();
-            Mocha houseBlendWithMocha = new Mocha(houseBlend);
-            Assert.Equal("House Blend Coffee, Mocha", houseBlendWithMocha.GetDescription());
+            CondimentDecorator houseBlendWithMocha = new Mocha(houseBlend);
+            CondimentDecorator houseBlendWithWhip = new Whip(houseBlendWithMocha);
+            Assert.Equal("House Blend Coffee, Mocha, Whip", houseBlendWithWhip.GetDescription());
         }
     }
 }

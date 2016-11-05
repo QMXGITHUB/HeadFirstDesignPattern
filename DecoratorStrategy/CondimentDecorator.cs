@@ -2,7 +2,6 @@
 {
     public abstract class CondimentDecorator: Beverage
     {
-        public abstract string GetDescription();
     }
 
     public class Mocha : CondimentDecorator
@@ -12,16 +11,28 @@
         public Mocha(Beverage berBeverage)
         {
             this.berBeverage = berBeverage;
+            description = berBeverage.GetDescription() + ", Mocha";
         }
 
         public override double Cost()
         {
             return 20 + berBeverage.Cost();
         }
+    }
 
-        public override string GetDescription()
+    public class Whip : CondimentDecorator
+    {
+        private readonly Beverage berBeverage;
+
+        public Whip(Beverage berBeverage)
         {
-            return berBeverage.GetDescription() + ", Mocha";
+            this.berBeverage = berBeverage;
+            description = berBeverage.GetDescription() + ", Whip";
+        }
+
+        public override double Cost()
+        {
+            return 19 + berBeverage.Cost();
         }
     }
 }
