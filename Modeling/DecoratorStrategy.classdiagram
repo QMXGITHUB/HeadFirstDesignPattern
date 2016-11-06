@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="82519049-a210-4ac2-9829-20c688b83653" name="DecoratorStrategy" linkedPackageId="f046079f-0c8b-4dab-ae3b-51251af1751e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6bba111c-8997-4cd6-b248-d3655924276a" name="Beverage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb46e7b0-6972-4822-b1f7-b8fca5613e20" />
+        <ownedOperationsInternal>
+          <operation Id="2857f069-acd6-4bb1-acd3-c2b55dd08f27" name="GetDescription" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="11328da3-c62f-4e63-b53f-5cb597e9318c" />
+          </operation>
+          <operation Id="58f07ca5-f5bf-4c52-a775-c92855513bb3" name="Cost" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0093837f-b2e6-4f6a-8da8-54c504887550" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="23c02451-66bc-4329-9f98-2ca4cfc27323" name="HouseBlend" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="566c1e91-d60e-47e5-b9d1-eacafdda63c7" />
+        <generalsInternal>
+          <generalization Id="0f1866a5-df7d-433c-8e66-f9a860866f6c" isSubstitutable="false">
+            <classMoniker Id="6bba111c-8997-4cd6-b248-d3655924276a" LastKnownName="Beverage" />
+            <elementDefinition Id="a53f9488-00f5-4d24-a2e8-2cb9aa3097dc" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="249be037-d308-4efc-9a46-105caf5a3b84" name="CondimentDecorator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fce4851b-4384-4284-a66e-4bc945de0cc3" />
+        <generalsInternal>
+          <generalization Id="8771afed-1d58-4957-89c6-e952b5ca2c4c" isSubstitutable="false">
+            <classMoniker Id="6bba111c-8997-4cd6-b248-d3655924276a" LastKnownName="Beverage" />
+            <elementDefinition Id="0a09ce99-8e21-4378-9174-97e84b92b8f0" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5322f57a-ab47-435f-a631-e54ffa792e36" name="Mocha" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="23b5de42-29b7-47b4-9599-caf01fa4c924" />
+        <generalsInternal>
+          <generalization Id="1addac40-2ddc-4f44-a49e-4b143713aba4" isSubstitutable="false">
+            <classMoniker Id="249be037-d308-4efc-9a46-105caf5a3b84" LastKnownName="CondimentDecorator" />
+            <elementDefinition Id="9de1b910-cf2d-4601-9928-268a7828eccc" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="b2ff1361-2da1-4b8d-b670-b07df25589f4" name="Beverage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9cc11c37-9756-4040-9809-f9c0d4776183" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de09f15d-4dc0-449d-a3ea-669372ebe90b" name="Whip" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4f8de159-b005-437f-8e32-000dc70ec8d2" />
+        <generalsInternal>
+          <generalization Id="0025d9dd-46f4-4a6d-bc32-85a0c671f117" isSubstitutable="false">
+            <classMoniker Id="249be037-d308-4efc-9a46-105caf5a3b84" LastKnownName="CondimentDecorator" />
+            <elementDefinition Id="69a566ea-6c84-4cea-99e0-8f748db4975b" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="cbab3d73-7262-4fce-a407-4e84084cbefb" name="Beverage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da953757-2923-497b-83b5-fdfc6381c37f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f046079f-0c8b-4dab-ae3b-51251af1751e" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3ba77eaa-7aac-42ac-9795-76b843d0e38a">
+        <profileInstance Id="a6a8b156-5a85-4e01-a7f9-c31a001df5d1" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6fb95e55-2b41-490b-a8b9-431b4aff0dbd">
+        <profileInstance Id="9e4b15bb-fb2b-4a6f-9ea5-af4f377ea0aa" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

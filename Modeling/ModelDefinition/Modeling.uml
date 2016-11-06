@@ -1001,6 +1001,135 @@
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bb46e7b0-6972-4822-b1f7-b8fca5613e20"
+        name="Beverage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="11328da3-c62f-4e63-b53f-5cb597e9318c"
+            name="GetDescription"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0093837f-b2e6-4f6a-8da8-54c504887550"
+            name="Cost"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="566c1e91-d60e-47e5-b9d1-eacafdda63c7"
+        name="HouseBlend"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a53f9488-00f5-4d24-a2e8-2cb9aa3097dc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bb46e7b0-6972-4822-b1f7-b8fca5613e20"
+              LastKnownName="Beverage"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fce4851b-4384-4284-a66e-4bc945de0cc3"
+        name="CondimentDecorator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0a09ce99-8e21-4378-9174-97e84b92b8f0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bb46e7b0-6972-4822-b1f7-b8fca5613e20"
+              LastKnownName="Beverage"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="23b5de42-29b7-47b4-9599-caf01fa4c924"
+        name="Mocha"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9de1b910-cf2d-4601-9928-268a7828eccc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fce4851b-4384-4284-a66e-4bc945de0cc3"
+              LastKnownName="CondimentDecorator"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="9cc11c37-9756-4040-9809-f9c0d4776183"
+            name="Beverage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4f8de159-b005-437f-8e32-000dc70ec8d2"
+        name="Whip"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="69a566ea-6c84-4cea-99e0-8f748db4975b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fce4851b-4384-4284-a66e-4bc945de0cc3"
+              LastKnownName="CondimentDecorator"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="da953757-2923-497b-83b5-fdfc6381c37f"
+            name="Beverage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
