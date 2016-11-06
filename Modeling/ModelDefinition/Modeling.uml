@@ -1001,6 +1001,207 @@
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1384fe9c-8b9e-4dda-bbb5-29223ed4d842"
+        name="Component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="a8650ba7-f332-4aac-b1ed-03e3e92d1278"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="41096afd-db52-4217-9535-f77a31c37e0f"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df0d2493-64a9-4362-bc7c-be86abd50a2f"
+        name="ConcreteComponent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="61b1cb19-9f97-4f00-8755-67f8a40c64ac"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1384fe9c-8b9e-4dda-bbb5-29223ed4d842"
+              LastKnownName="Component"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3939fc23-9b42-4519-b14d-a0e65581d3cb"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ae6a1bb5-e99d-4288-bb52-b8e0e08f0c49"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9563bcc7-f5fa-49ec-9895-5e0147bf7d80"
+        name="Decorator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3e555128-2d94-4085-9998-2e650d530d05"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1384fe9c-8b9e-4dda-bbb5-29223ed4d842"
+              LastKnownName="Component"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c26e60ba-7124-4a3e-975c-570a54f7b55e"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="82e25a0c-2a48-4a25-922e-48b73e133026"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="270d5865-2b9b-4264-a39b-56eeb3fe6007"
+        name="ConcreteDecoratorA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="fed40f98-51b9-45ba-8f0d-2909ebe9b0d7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9563bcc7-f5fa-49ec-9895-5e0147bf7d80"
+              LastKnownName="Decorator"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="24859496-62b1-4165-b997-89c1bcb0f5e4"
+            name="Component"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9087314c-e39d-4de4-9f24-5e6145fbc592"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="97ced46a-e91c-4594-bf55-541e9c205472"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9753b59f-0ebd-41ce-8f30-47f0d0bd8c3a"
+        name="ConcreteDecoratorB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2f438d0c-b06f-491f-8508-e74de740f860"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9563bcc7-f5fa-49ec-9895-5e0147bf7d80"
+              LastKnownName="Decorator"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="21620ac0-b6b9-4fcd-bf3a-2a57a77b3fe8"
+            name="Component"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="10845b09-b0cf-4f45-8d7f-19ee269f85c7"
+            name="MethodA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0d07d894-719f-4088-a24d-3b2cd1ba6deb"
+            name="MethodB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>AbastractFactoryStrategy.classdiagram</DependentUpon>
     </Content>
+    <Content Include="DecoratorStrategy.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DecoratorStrategy.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DecoratorStrategy.classdiagram</DependentUpon>
+    </Content>
     <Content Include="FactoryStrategy.classdiagram">
       <SubType>Content</SubType>
     </Content>
