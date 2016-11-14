@@ -2,28 +2,22 @@
 
 namespace Common
 {
-    public interface IConsole
+    public class ConsoleStub
     {
-        void WriteLine(string message);
-    }
-
-    public class ConsoleStub:IConsole
-    {
-        private List<string> allConsole;
-
-        public ConsoleStub()
-        {
-            allConsole = new List<string>();
-        }
-        
-        public List<string> GetAllConsole()
+        private static List<string> allConsole = new List<string>();
+        public static List<string> GetAllConsole()
         {
             return allConsole;
         }
 
-        public void WriteLine(string message)
+        public static void WriteLine(string message)
         {
             allConsole.Add(message);
+        }
+
+        public static void Clear()
+        {
+            allConsole.Clear();
         }
     }
 }
