@@ -29,6 +29,20 @@
       <SubType>Content</SubType>
       <DependentUpon>AbastractFactoryStrategy.classdiagram</DependentUpon>
     </Content>
+    <Content Include="CommandStrategy.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandStrategy.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommandStrategy.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CommandStrategyExample.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandStrategyExample.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommandStrategyExample.classdiagram</DependentUpon>
+    </Content>
     <Content Include="DecoratorStrategy.classdiagram">
       <SubType>Content</SubType>
     </Content>
