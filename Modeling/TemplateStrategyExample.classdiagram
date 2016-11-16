@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3ff811ae-675d-4190-a615-77d71928d856" name="TemplateStrategyExample" linkedPackageId="6ffe1437-a7c9-4313-9b2e-599364d18119" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e042f95d-fb7f-44d3-a800-cbe1ab084641">
+      <profileInstance Id="29f488fc-7828-47df-af75-f0976963cb2a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="97d0f14e-94c0-4c1c-be98-b2ea806e3cfd">
+      <profileInstance Id="92391ff2-0bce-4169-80da-ec92e6a36ae6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="386036a0-bc3c-48e2-88c3-1161dd40e251" name="MQClubWork" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0ad8f5e5-822d-424a-9266-21bac82f0c7a" />
+        <ownedOperationsInternal>
+          <operation Id="8baed0d2-28d5-41d6-b29c-928ea77c8d4b" name="PrepareRecipe" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f19a17a-c800-4bd1-9970-f509621c8c6e" />
+          </operation>
+          <operation Id="3cd71edf-80ad-4ac2-8a03-b27f3d41edc7" name="BoilWater" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="22ae87b8-eeb7-4be5-8abf-e8972762f3fc" />
+          </operation>
+          <operation Id="cec07551-fc7e-4574-8978-d1c5b4e03137" name="Brew" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="68cd11ec-51fc-4ba3-8f66-6032e31c36c6" />
+          </operation>
+          <operation Id="bd028f30-a3ae-451f-9bc9-6c4b9149a9bc" name="PourInCup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc548760-66eb-4beb-ad9a-2f78df96dc3b" />
+          </operation>
+          <operation Id="f8c7e03b-cee3-47ef-8138-a62816c78e26" name="AddCondiments" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7e70e617-675d-444a-823a-4da56636dc11" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="75ed86d8-3c05-401b-9157-d33bd3ca76d8" name="Coffee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42cf7467-f9f3-4deb-880d-f6c6c4871b5f" />
+        <generalsInternal>
+          <generalization Id="9620fdfe-8a54-44b9-a196-071a13423241" isSubstitutable="false">
+            <classMoniker Id="386036a0-bc3c-48e2-88c3-1161dd40e251" LastKnownName="MQClubWork" />
+            <elementDefinition Id="958b379e-a732-4daf-826a-771ef4424dbf" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="cc07aae8-3df3-42c1-823f-7d3d5df3bc30" name="Brew" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21afca8e-327b-44ce-ab94-39f6c8ec7155" />
+          </operation>
+          <operation Id="78025c7f-98b1-499b-8d5d-2d39772b6710" name="AddCondiments" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b8203a80-dd10-47d2-83a4-00bb2c3c194b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4f249136-7464-4730-8123-47af5a56c5ef" name="Tea" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4ce98c17-1df6-4d18-9f47-a805aec8f3ba" />
+        <generalsInternal>
+          <generalization Id="df78ad89-7508-4a28-b2b5-5bc1724186a8" isSubstitutable="false">
+            <classMoniker Id="386036a0-bc3c-48e2-88c3-1161dd40e251" LastKnownName="MQClubWork" />
+            <elementDefinition Id="1e5e69a6-c78d-4d38-908c-26cc38ad0393" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="1dca2f28-cca5-43b5-a014-82377a0dd8b0" name="Brew" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3d884794-1b4b-4cb6-afe1-a10141b08b2d" />
+          </operation>
+          <operation Id="5aff6321-2175-4b48-8341-987f2087c70e" name="AddCondiments" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f76b9122-2cf6-4892-a674-876702e58098" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6ffe1437-a7c9-4313-9b2e-599364d18119" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>

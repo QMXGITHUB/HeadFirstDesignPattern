@@ -1907,6 +1907,203 @@
         </targetEnds>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0ad8f5e5-822d-424a-9266-21bac82f0c7a"
+        name="MQClubWork"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="3f19a17a-c800-4bd1-9970-f509621c8c6e"
+            name="PrepareRecipe"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="22ae87b8-eeb7-4be5-8abf-e8972762f3fc"
+            name="BoilWater"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="68cd11ec-51fc-4ba3-8f66-6032e31c36c6"
+            name="Brew"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bc548760-66eb-4beb-ad9a-2f78df96dc3b"
+            name="PourInCup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7e70e617-675d-444a-823a-4da56636dc11"
+            name="AddCondiments"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="42cf7467-f9f3-4deb-880d-f6c6c4871b5f"
+        name="Coffee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="958b379e-a732-4daf-826a-771ef4424dbf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0ad8f5e5-822d-424a-9266-21bac82f0c7a"
+              LastKnownName="MQClubWork"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="21afca8e-327b-44ce-ab94-39f6c8ec7155"
+            name="Brew"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b8203a80-dd10-47d2-83a4-00bb2c3c194b"
+            name="AddCondiments"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4ce98c17-1df6-4d18-9f47-a805aec8f3ba"
+        name="Tea"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1e5e69a6-c78d-4d38-908c-26cc38ad0393"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0ad8f5e5-822d-424a-9266-21bac82f0c7a"
+              LastKnownName="MQClubWork"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3d884794-1b4b-4cb6-afe1-a10141b08b2d"
+            name="Brew"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f76b9122-2cf6-4892-a674-876702e58098"
+            name="AddCondiments"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="47ad6c77-b0ef-4269-b991-75368df1ca40"
+        name="AbstractClass"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="6f388037-632d-43ba-a613-7c998baa5c73"
+            name="TemplateMethod"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9392d8e7-8dd6-4a27-9730-7ddd05f94c4b"
+            name="PrimitiveOperation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6083f695-8c79-4346-9491-3037a0da76f4"
+            name="PrimitiveOperation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26a7ab63-91b1-49c3-b438-21b410f8be5b"
+        name="ConcreteClass"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3e584baf-2e17-451c-852c-fd96a34a87a5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="47ad6c77-b0ef-4269-b991-75368df1ca40"
+              LastKnownName="AbstractClass"
+              LastKnownLocation="Modeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="488e44b7-c7ca-4c3b-8a7e-641812b0c29a"
+            name="PrimitiveOperation1"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c368863-23ac-45ae-9611-345812610a1f"
+            name="PrimitiveOperation2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
