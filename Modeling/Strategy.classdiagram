@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6afeda73-7029-4f97-8a32-21471a636601" name="Strategy" linkedPackageId="d962f302-5f65-4ea6-bfc6-096152273187" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4055df0d-3ef5-4ba3-b557-aaf00fc50da8" name="Duck" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8098e2e0-c33e-4690-b80f-a2a498e573e4" />
+        <targetEnds>
+          <association Id="54e936a4-1650-44d8-a0c9-6675e5eafc27" isDerived="false" sourceEndRoleName="Duck" targetEndRoleName="FlyBehavior" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="bd4619f4-0dc5-4090-9181-e0378bd6a6ae" LastKnownName="FlyBehavior" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a1ff58b-14c4-4a07-a8f1-ea43d5e8eb7f" name="Duck" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d828938-0d1c-4db8-a770-e41437b1057f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69f73e78-3087-4be9-b166-0c914c4d41ee" name="FlyBehavior" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="042ebe92-96cf-43cd-8e17-6b0c480cb822" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e334a21e-d661-4438-a2b6-e24a11bee9e9" />
+          </association>
+          <association Id="ffbde151-f583-4b82-a7ec-92c4c11575a7" isDerived="false" sourceEndRoleName="Duck" targetEndRoleName="QuackBehavior" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="9f19b546-a2ed-4c55-8559-4741d2d248fb" LastKnownName="QuackBehavior" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="97793e14-ef70-47b2-9049-bb88a36766ae" name="Duck" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fddeead3-c277-47f5-8e88-8cfad30a8321" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="278c2dcb-c550-4b07-bf6c-d4c397d529bf" name="QuackBehavior" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9cbbe9dd-ecd7-4206-917a-1a4d22e775b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d83ca77b-4902-49c7-aa1b-78b5ddbac269" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ea599611-91bc-4670-8648-a8a001c8bc16" name="FlyBehavior" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4891f5b-ba65-42c3-baf5-ff10fabe7bc0" />
+          </property>
+          <property Id="33777ef6-2409-4b54-8bad-3ff5871f84b5" name="QuackBehavior" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fdb2c6cb-9b6f-4a2f-aa2c-dcef6c25d26b" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bcfcae2b-b799-4f3d-adb6-4ccba2091f38" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0063fd03-451e-41bd-9f54-89a09059d93a" />
+          </operation>
+          <operation Id="fe5feb13-16b5-46fb-9508-f50715fce749" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c668ea6e-9ced-498f-a00c-c85c581b3f4b" />
+          </operation>
+          <operation Id="91c039d6-00e5-42a8-af33-9a4601955e7b" name="SetFlyBehavior" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="667dd36e-74e0-4828-acac-ccbc5cc7ce17" />
+          </operation>
+          <operation Id="5c459f2f-30fe-42dd-acd3-77ab002031a8" name="SetQuackBehavior" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9d0dd449-b6c0-4a8a-9cc0-0105f880ad5e" />
+          </operation>
+          <operation Id="5d653710-b48a-4492-a517-52501de79ed0" name="Display" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c10c00ac-d5fe-4832-b797-a7f6fd5a29fc" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c5312a11-9e9b-4fae-855c-74d2b8ebfcb1" name="ModelDuck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0eda7905-f1bf-4ad4-bf4c-5032315c8ae0" />
+        <generalsInternal>
+          <generalization Id="aa7817ee-daa8-4bde-9113-5622444702ab" isSubstitutable="false">
+            <classMoniker Id="4055df0d-3ef5-4ba3-b557-aaf00fc50da8" LastKnownName="Duck" />
+            <elementDefinition Id="ec226f06-ecc8-498b-97ce-7e041fb95af9" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="bd4619f4-0dc5-4090-9181-e0378bd6a6ae" name="FlyBehavior" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="492c2c21-0814-452e-ab69-3edb4235c94b" />
+        <ownedOperations>
+          <operation Id="b7739014-584f-4add-b855-9b23622c3f42" name="Fly" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88328d55-699e-4482-b8f9-2ac8b477276f" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9f19b546-a2ed-4c55-8559-4741d2d248fb" name="QuackBehavior" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d7a833e4-2f8b-4751-a9f6-099094554343" />
+        <ownedOperations>
+          <operation Id="daab517a-5cc7-4802-bd55-b4205712833a" name="Quack" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="76871782-dbc2-4091-8f60-1d25366eec15" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5acd0686-2639-4e29-bfa0-af43dd9a4472" name="FlyNoWay" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3dbc5baf-907e-4c44-a97e-55d487e80029" />
+        <suppliersInternal>
+          <interfaceRealization Id="bba7459a-9b8b-4add-b3d6-4ea11f0adcc0">
+            <interfaceMoniker Id="bd4619f4-0dc5-4090-9181-e0378bd6a6ae" LastKnownName="FlyBehavior" />
+            <elementDefinition Id="bfee93e8-86ab-44fc-88ee-ac5e844d06a3" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="b8ff42be-39c4-4847-9042-3d182d1f0a4b" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="69f78fbc-3d56-43c6-be93-c5b895bb0a05" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="527a1ffb-05cb-4115-8d5e-5c9df88c1480" name="FlyWithWings" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc93698f-dac0-414d-a25e-d5feb4ddfc0b" />
+        <suppliersInternal>
+          <interfaceRealization Id="762b4039-86da-4b77-bee2-5535bac55d51">
+            <interfaceMoniker Id="bd4619f4-0dc5-4090-9181-e0378bd6a6ae" LastKnownName="FlyBehavior" />
+            <elementDefinition Id="75db05be-497a-4f3b-9dd1-a44425f48790" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="0744865d-cd96-4614-8857-90dc11a4335c" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5bae8966-dd94-4d44-8a33-4da63c2148d7" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fd3683ef-24bd-410d-b042-684065d38303" name="MuteQuack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aa5c3bdc-132b-4e81-921c-8cb0751c81ea" />
+        <suppliersInternal>
+          <interfaceRealization Id="0e048a76-f4ce-4059-8817-83159025fd5c">
+            <interfaceMoniker Id="9f19b546-a2ed-4c55-8559-4741d2d248fb" LastKnownName="QuackBehavior" />
+            <elementDefinition Id="3fb2f069-fafb-46ae-a943-630170e8c133" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="80690a2b-564c-44b8-ae54-3c4f57af8f89" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ab045300-ef40-4779-92bb-41485c2a4cc9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dcd799be-8504-4623-8520-baa351887666" name="QuackOnly" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e58a180e-1b53-4d03-a434-80305859c628" />
+        <suppliersInternal>
+          <interfaceRealization Id="d1ca5071-50cb-4ced-89ad-d11a344ae150">
+            <interfaceMoniker Id="9f19b546-a2ed-4c55-8559-4741d2d248fb" LastKnownName="QuackBehavior" />
+            <elementDefinition Id="c54cd29a-de9f-414b-a0fe-70a6566c40fb" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="50e6aab4-0916-4794-9f88-fa02731d21de" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd77ad65-d2e9-472f-9800-d036d3878206" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d962f302-5f65-4ea6-bfc6-096152273187" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c20bed29-3009-47ff-b201-897c6b669df5">
+        <profileInstance Id="7535a8d8-0a90-406d-a7ea-16ecb0ff9746" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5c0c4e36-5f31-4f8c-8688-3f3c10d970f0">
+        <profileInstance Id="90874f7c-bac2-4515-b744-f491bb0a23b8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

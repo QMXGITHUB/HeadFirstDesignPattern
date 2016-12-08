@@ -71,6 +71,13 @@
       <SubType>Content</SubType>
       <DependentUpon>StatusStratery.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Strategy.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Strategy.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Strategy.classdiagram</DependentUpon>
+    </Content>
     <Content Include="TemplateStrategy.classdiagram">
       <SubType>Content</SubType>
     </Content>
