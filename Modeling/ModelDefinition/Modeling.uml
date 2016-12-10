@@ -2426,6 +2426,212 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4b3d247a-e687-4647-9be3-0720b3fcecb3"
+        name="Subject"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="99a3ac6d-7a9b-4669-adf9-f7af7a4fdd98"
+            isDerived="false"
+            sourceEndRoleName="Subject"
+            targetEndRoleName="Observer"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="581daaf1-c971-4e5e-84e9-5acae6fc9dec"
+              LastKnownName="Observer"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d38c990c-91bb-40e5-8939-1a3782a45ceb"
+                  name="Subject"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5defa7a-406b-4edd-bf84-32e923c7d904"
+                  name="Observer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation
+            Id="c7c6a3c7-afda-48d2-9551-aebfa15a8982"
+            name="RejisterObserver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2fcd8aa8-a3a8-41ee-ab61-38330151bf1b"
+            name="RemoveObserver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a1667dec-d438-431b-b601-0cd58cb5ade2"
+            name="NotifyObservers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ebd9c09-33e0-4682-b8e6-faa552e3b3b1"
+        name="WeatherData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="559bb988-762c-410f-9bcf-959d6f3088c6">
+            <interfaceMoniker
+              Id="4b3d247a-e687-4647-9be3-0720b3fcecb3"
+              LastKnownName="Subject"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2dd4cf90-d0e0-422b-8130-f1d580b00a3e"
+            name="MeasurementsChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6a095264-d8c5-446d-ab17-a2cee4edf9f5"
+            name="RejisterObserver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1cd369e5-6139-438a-8c6f-63eb6fc5375b"
+            name="RemoveObserver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3cae4fe4-3025-4ae2-b2e8-56453c015df2"
+            name="NotifyObservers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="581daaf1-c971-4e5e-84e9-5acae6fc9dec"
+        name="Observer"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="fec04498-1eac-4e69-9949-b60576cc0c5e"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="90edb0be-7741-49e1-aafc-e9372abdb3ee"
+        name="DisplayElement"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="e9a45b75-9589-412a-aa9c-e0826c1e5c7c"
+            name="Display"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bc56d7e-684f-4ec9-96f5-12c400c227e8"
+        name="CurrentConditionDisplay"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="dd044d80-759d-4d22-a568-12074f9e6c73">
+            <interfaceMoniker
+              Id="581daaf1-c971-4e5e-84e9-5acae6fc9dec"
+              LastKnownName="Observer"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+          <interfaceRealization
+            Id="f39d10ea-b154-4da6-9fdb-e7d569c60732">
+            <interfaceMoniker
+              Id="90edb0be-7741-49e1-aafc-e9372abdb3ee"
+              LastKnownName="DisplayElement"
+              LastKnownLocation="Modeling.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f6a4e37a-1f11-4804-96d8-c19d9eceaa53"
+            name="Update"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8b12a56a-8b82-4fa1-9cd6-aecaa05846cc"
+            name="Display"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
