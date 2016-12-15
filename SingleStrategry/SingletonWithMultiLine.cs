@@ -2,7 +2,7 @@
 {
     public class SingletonWithMultiLine
     {
-        private volatile static SingletonWithMultiLine uniqueInstance = new SingletonWithMultiLine();
+        private volatile static SingletonWithMultiLine uniqueInstance = null;
         private static readonly object lockHelper = new object();
         private SingletonWithMultiLine()
         {
