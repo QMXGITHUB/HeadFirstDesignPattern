@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ObjectAdapter">
+  <logicalClassDesignerModelMoniker Id="1a10db25-8742-4516-a6c4-b1f6536003fb" />
+  <nestedChildShapes>
+    <classShape Id="a3d6f116-14cd-4427-ae9b-d77742da5e7d" absoluteBounds="0.5, 0.875, 2.25, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6c2f574e-2ab3-4d31-b1c7-b1e051b918b1" LastKnownName="TurkeyDuckAdapterFacts" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3d2de4e9-3730-4684-843f-65878db96cb7" absoluteBounds="0.515, 1.2650000000000001, 2.2199999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fa81f480-ace1-433f-a0e9-edc6a3f4c6c7" absoluteBounds="0.515, 1.4761718675494193, 2.2199999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="b2f1a76d-ec26-4bdb-82d3-e1238d06720c" absoluteBounds="4.125, 0.75, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="8581e94f-4e14-4727-b9a2-673af9aa1be6" LastKnownName="IDuck" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="4fd16472-ce7b-4cd2-822a-2baf8f98bd38" absoluteBounds="4.1400000000000006, 1.1400000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="0fc2cf4e-1558-4954-b646-8d694554fa08" absoluteBounds="4.1400000000000006, 1.3511718675494193, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <associationConnector edgePoints="[(2.75 : 1.32617186754942); (4.125 : 1.32617186754942)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="71cd795c-0545-4e4d-ad55-69cab6a25d42" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="a3d6f116-14cd-4427-ae9b-d77742da5e7d" />
+        <interfaceShapeMoniker Id="b2f1a76d-ec26-4bdb-82d3-e1238d06720c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="da252635-3132-47b6-9119-4c240f069a57" absoluteBounds="4.125, 2.5, 1.5, 1.3828124701976772" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f8834ef1-0e01-47a0-88b5-c491c686854b" LastKnownName="TurkeyAdapter" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e1b0141f-25a5-458f-b49a-f2b770a7d1de" absoluteBounds="4.1400000000000006, 2.89, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d134d2fe-400a-4dd6-967f-c8a50a1d5b62" absoluteBounds="4.14, 3.2613281125823654, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(4.875 : 2.5); (4.875 : 1.97265622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="43437e81-ae2f-4879-909a-1abb5f11a9a2" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="da252635-3132-47b6-9119-4c240f069a57" />
+        <interfaceShapeMoniker Id="b2f1a76d-ec26-4bdb-82d3-e1238d06720c" />
+      </nodes>
+    </realizationConnector>
+    <classShape Id="c7479045-7cbf-420f-9184-00cac070c27c" absoluteBounds="7.25, 2.5, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="84ccc176-6c6e-4fe8-83ba-37dbecfb4068" LastKnownName="WildTurkey" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="48c2ba2d-1893-4270-869d-6fb592ec8ce9" absoluteBounds="7.265, 2.89, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5e2f0912-baca-42dc-85b7-67b09a523483" absoluteBounds="7.265, 3.1011718675494193, 1.4700000000000002, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.625 : 3.11132811258237); (7.25 : 3.11132811258237)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="50fa4857-ca87-40a9-9857-7a2df82186fa" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="da252635-3132-47b6-9119-4c240f069a57" />
+        <classShapeMoniker Id="c7479045-7cbf-420f-9184-00cac070c27c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

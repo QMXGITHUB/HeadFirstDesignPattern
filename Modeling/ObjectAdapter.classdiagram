@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1a10db25-8742-4516-a6c4-b1f6536003fb" name="ObjectAdapter" linkedPackageId="cb7dd7e6-ec88-4f12-a011-dec6c810b3ee" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ceb7016a-a85a-4909-955a-8b860ac6d9bb">
+      <profileInstance Id="a11d3042-56c4-4aad-9a91-0fcaad74cbc4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aa892a31-24d0-4b80-8130-b268a9201d14">
+      <profileInstance Id="fdb738e8-601e-44d6-b7cd-34015edc5192" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6c2f574e-2ab3-4d31-b1c7-b1e051b918b1" name="TurkeyDuckAdapterFacts" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26b361c1-2d86-404c-a626-a00bbf4e1d14" />
+        <targetEnds>
+          <association Id="71cd795c-0545-4e4d-ad55-69cab6a25d42" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="8581e94f-4e14-4727-b9a2-673af9aa1be6" LastKnownName="IDuck" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3aab077d-2352-4d00-86f7-6b4b545f80ff" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0dd3bfd6-6ac0-4cfa-882a-cdebcc70fc72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4be16dd-4609-40fc-9f23-4ddfef6f03a8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="34f6c798-8feb-4313-8ab5-8879da776204" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8506f98-2cb6-4e26-ae28-0706375d5fe0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="8581e94f-4e14-4727-b9a2-673af9aa1be6" name="IDuck" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ae6e5fa-2868-4390-a59e-5ec0c33b60f1" />
+        <ownedOperations>
+          <operation Id="81a3ac08-6447-4653-ae68-dfaf764d7941" name="Fly" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="de84ab72-0530-4577-b3fc-6d4d1745c191" />
+          </operation>
+          <operation Id="69255db8-4ab0-403d-8640-7d587df24521" name="Quack" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="79d3dad9-f516-4abd-b7db-8163f08829b9" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8834ef1-0e01-47a0-88b5-c491c686854b" name="TurkeyAdapter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b230a99a-b91a-4466-b41d-76fab57c249f" />
+        <suppliersInternal>
+          <interfaceRealization Id="43437e81-ae2f-4879-909a-1abb5f11a9a2">
+            <interfaceMoniker Id="8581e94f-4e14-4727-b9a2-673af9aa1be6" LastKnownName="IDuck" />
+            <elementDefinition Id="702354ac-c69b-42d9-9682-c681d9ff4938" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="50fa4857-ca87-40a9-9857-7a2df82186fa" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="84ccc176-6c6e-4fe8-83ba-37dbecfb4068" LastKnownName="WildTurkey" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3babec5-7a90-4f98-bfc0-71ca2eb25d8e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a5022f8-90f6-4d32-a216-384f340edce6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c124403d-99f5-4dbb-910a-3ce9f01acd42" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7c3fc6d-428e-4791-9250-c6d718705afe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b42123a7-be99-40dd-8a61-4a6ce567e455" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="23e9cb3c-3a7c-42c2-bcfe-584dcf62ae7d" name="Turkey" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5316a928-3c4a-4751-9efa-3d97ca391919" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="919ca0f3-1625-434f-a1eb-97e1a0e98637" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b7879ed2-c452-44f2-9e31-55ff48325d7f" />
+          </operation>
+          <operation Id="6a7ee61c-f030-44b4-b982-716146426821" name="Quack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8755815b-2a1c-4631-81d9-2ba57e12434e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="84ccc176-6c6e-4fe8-83ba-37dbecfb4068" name="WildTurkey" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bcdbce49-4c77-4691-967a-d125afc32747" />
+        <ownedOperationsInternal>
+          <operation Id="a5f35c27-0097-4b4a-8319-841839954f6c" name="Fly" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4cb3df7-b251-42ad-8bc6-842ac5165abd" />
+          </operation>
+          <operation Id="5df4fc38-169f-4e5d-a51a-452961ead4f8" name="Gobble" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="54663009-5c92-402b-a60d-ed78519e7094" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="cb7dd7e6-ec88-4f12-a011-dec6c810b3ee" name="Modeling">
+    <elementDefinition Id="dddaddeb-6ecd-468e-8857-80176c627c23" />
+  </package>
+</logicalClassDesignerModel>

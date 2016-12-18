@@ -57,6 +57,13 @@
       <SubType>Content</SubType>
       <DependentUpon>FactoryStrategy.classdiagram</DependentUpon>
     </Content>
+    <Content Include="ObjectAdapter.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ObjectAdapter.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ObjectAdapter.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ObservorStrategy.classdiagram">
       <SubType>Content</SubType>
     </Content>
